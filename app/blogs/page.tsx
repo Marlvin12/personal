@@ -37,7 +37,7 @@ const essays = [
   },
   {
     id: 'ubiquitous-assimilation',
-    title: 'Ubiquitous Assimilation: The Marketing Holocaust That Kills Great Work',
+    title: 'Ubiquitous Assimilation: The Erasure of Original Thought',
     excerpt: 'There is a quiet war being fought every day — not with weapons, but with trends. A war where originality dies not by censorship, but by assimilation.',
     date: 'November 9, 2025',
     readTime: '8 min read',

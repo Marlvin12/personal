@@ -73,7 +73,7 @@ const essays: Record<
     ],
   },
   'ubiquitous-assimilation': {
-    title: 'Ubiquitous Assimilation: The Marketing Holocaust That Kills Great Work',
+    title: 'Ubiquitous Assimilation: The Erasure of Original Thought',
     date: 'November 9, 2025',
     readTime: '8 min read',
     content: [
