@@ -22,6 +22,7 @@ export default function FeaturedProjects() {
       description: 'WhatsApp-based remittance and financial onboarding platform powered by the XRP Ledger.',
       color: 'bg-gray-100',
       image: '/safari.png',
+      link: 'https://www.safariprotocol.xyz/',
     },
     {
       name: 'DoS Detection System',
