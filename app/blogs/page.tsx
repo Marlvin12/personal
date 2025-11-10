@@ -8,6 +8,27 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    id: 'living-more-loving-more',
+    title: 'Living More and Loving More',
+    excerpt: 'Somewhere along the way, someone lied. They sold us the wrong dream — that success means screens, schedules, and status. That to matter, we have to constantly do more, own more, post more.',
+    date: 'November 10, 2025',
+    readTime: '3 min read',
+  },
+  {
+    id: 'internet-library-to-marketplace',
+    title: 'The Internet Used to Be a Library, Now It\'s a Marketplace',
+    excerpt: 'There was a time when the internet felt pure — a place of curiosity, creativity, and community. You could search for something, learn, and move on. No one followed you with ads.',
+    date: 'November 10, 2025',
+    readTime: '4 min read',
+  },
+  {
+    id: 'life-is-easy',
+    title: 'Life Is Easy If We Make It That Way',
+    excerpt: 'I\'ve lived half my life in Zimbabwe and half in the United States, and that contrast has taught me one thing: life is easy if we make it that way.',
+    date: 'November 10, 2025',
+    readTime: '6 min read',
+  },
+  {
     id: 'success-is-a-numbers-game',
     title: 'Success Is a Numbers Game — Nothing More',
     excerpt: 'I didn\'t learn about success from a textbook — I learned it from experience. From college and scholarship applications, to job rejections, to reaching out to investors, I began to see a pattern: success isn\'t magic, it\'s mathematics.',

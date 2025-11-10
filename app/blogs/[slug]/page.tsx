@@ -11,6 +11,54 @@ const essays: Record<
     content: string[]
   }
 > = {
+  'living-more-loving-more': {
+    title: 'Living More and Loving More',
+    date: 'November 10, 2025',
+    readTime: '3 min read',
+    content: [
+      `Somewhere along the way, someone lied.`,
+      `They sold us the wrong dream — that success means screens, schedules, and status. That to matter, we have to constantly do more, own more, post more.`,
+      `But I've been taking time away — long days camping, hiking, sitting under trees, and just breathing. And dang, man… someone really lied.`,
+      `Out there, where there's no Wi-Fi, no notifications, and no pressure to perform, life feels real again. You notice how food tastes better when you're hungry, how laughter feels deeper when you're not rushing, how people — your parents, your friends, even strangers — start to matter again.`,
+      `We've all been tricked into caring about things that don't. Followers, fashion, titles, opinions. We scroll through other people's lives while forgetting to live our own. But the truth is simple: We don't need more stuff. We need more moments. We don't need to be more liked. We need to be more loving.`,
+      `Living more isn't about doing more — it's about being present. Loving more isn't about saying it — it's about showing up.`,
+      `So yeah, someone lied. But we don't have to keep believing it. All we have to do is unplug, step outside, and remember what really matters — to live more, and love more.`,
+    ],
+  },
+  'internet-library-to-marketplace': {
+    title: 'The Internet Used to Be a Library, Now It\'s a Marketplace',
+    date: 'November 10, 2025',
+    readTime: '4 min read',
+    content: [
+      `There was a time when the internet felt pure — a place of curiosity, creativity, and community. You could search for something, learn, and move on. No one followed you with ads. No one tried to sell you a "limited-time offer." You just explored.`,
+      `Now, everything online is a product. Every click, every thought, every interest is part of someone's sales funnel. Social media turned our personalities into brands, our attention into currency, and our time into inventory.`,
+      `It's ironic — the internet, which once liberated people with free access to knowledge, has now become one of the greatest tools of subtle control. You can't scroll for ten seconds without being targeted. The "explore" page isn't there to inspire you — it's there to sell you. Even authenticity has been commodified: "Be real," but do it in 4K with sponsored lighting.`,
+      `People aren't just tired — they're mentally crowded. Every platform competes for your focus, every influencer for your trust. Even silence feels strange now, because the world has trained us to consume nonstop.`,
+      `That's why it's fascinating to see a quiet migration happening — people moving from mainstream Google to tools like ChatGPT. Not because it's trendy, but because it's quiet. No ads. No clickbait. No one trying to sell you something. Just information, the way the internet used to be.`,
+      `It reminds me of what the web was meant to be — a library, not a mall. A space for thought, not distraction.`,
+      `Maybe this is the new definition of digital freedom: being able to learn, think, and create without being converted into a customer every five minutes.`,
+      `The same principle applies to life itself. Freedom — whether in the real world or online — isn't about owning more, it's about filtering less.`,
+      `And maybe, just maybe, the most radical thing left to do is to be unreachable, unbranded, and unbothered — to live and think without selling yourself in the process.`,
+    ],
+  },
+  'life-is-easy': {
+    title: 'Life Is Easy If We Make It That Way',
+    date: 'November 10, 2025',
+    readTime: '6 min read',
+    content: [
+      `I've lived half my life in Zimbabwe and half in the United States, and that contrast has taught me one thing: life is easy if we make it that way.`,
+      `In Zimbabwe, people are happy. They laugh loudly, dance freely, and live slowly. According to mainstream media, they're "poor." But I've realized the world often equates not having with unhappiness, as if peace only exists behind a credit score.`,
+      `My grandparents built their home in one month — mortar bricks molded by my cousins, a few bags of cement, and pure teamwork. No debt. No mortgage. Just family and freedom. Meanwhile, in America, you can build the same house — maybe even better — but you'll spend thirty years paying for it. That's when I understood what true freedom is.`,
+      `Freedom isn't having more than yesterday; it's having enough for today. My grandparents grow their food, raise chickens and cattle, and live without alarm clocks or rent reminders. They are rich — not in money, but in time.`,
+      `When I traveled to Europe, I saw a glimpse of that same rhythm. People would smoke after lunch, sip tea, and spend hours in conversation. They weren't racing life; they were living it. Life is meant to be experienced — not traded away for a house you'll only own for a decade before you die.`,
+      `Growing up, I didn't know about clothing labels. We wore whatever our parents bought — hand-me-downs, second-hand shirts from the open market, my dad's old coat, my brother's jeans that no longer fit him. It wasn't a lack of money; it was a lack of obsession. We didn't measure worth in logos.`,
+      `Then I got my first phone at twenty, and the world changed. Suddenly, I could see what everyone else owned — their Jordans, their cars, their vacations. I began to want what they had, not because I needed it, but because I didn't want to feel less. Just like C.S. Lewis wrote in "The Inner Ring," I was peeling the onion — chasing a place among people who didn't even know I existed.`,
+      `By twenty-two, I realized I was going nowhere. I had to course-correct. So I went back to my roots — to simplicity. Now, I wear plain shirts that cost a dollar, thrifted jeans, and a peaceful conscience. I'm not embarrassed — that's how I was raised. And it's liberating.`,
+      `Because I've learned that: Happiness is peace of mind, not possessions. Freedom is control over your time, not your image. Success is alignment between your values and your actions — not your follower count.`,
+      `In the end, life isn't supposed to be a race. It's supposed to be a rhythm — something you live with intention, not exhaustion.`,
+      `So yes, life is easy — if we make it that way. But it requires unlearning what the world told us to chase, and remembering what our grandparents never forgot: you don't need more to live better; you just need enough.`,
+    ],
+  },
   'success-is-a-numbers-game': {
     title: 'Success Is a Numbers Game — Nothing More',
     date: 'November 9, 2025',
