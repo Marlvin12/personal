@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import type { Metadata } from 'next'
 
@@ -9,6 +10,7 @@ const essays: Record<
     date: string
     readTime: string
     content: string[]
+    image?: string
   }
 > = {
   'living-more-loving-more': {
@@ -96,6 +98,24 @@ const essays: Record<
       `The marketing holocaust cannot kill the mind that refuses to be sold.`,
     ],
   },
+  'the-african-mask': {
+    title: 'The African Mask',
+    date: 'November 18, 2025',
+    readTime: '5 min read',
+    image: '/african-mask.jpeg',
+    content: [
+      `I grew up believing the world was simple: the people with the least should be the ones who complain the most. Then I left home, traveled, returned, and realized how wrong that assumption was.`,
+      `If you drive through Cape Town long enough, you'll meet the contradiction face-to-face. I remember one afternoon — nothing dramatic, no life-changing event — just a moment that hit harder than I expected. A man on the side of the road asked for twenty rand. I handed it to him. He looked at me, smiled, and said, "Dankie, baba. Have a great day."`,
+      `Not a rehearsed script. Not a transactional thank you. A real one. The kind that disarms you. He walked away smiling, toward a small boy who couldn't have been more than five. And the thing that stuck with me wasn't the poverty. It was the dignity. The softness. The humanity that had no business being that intact in circumstances that harsh.`,
+      `Southern Africans carry a trait the world doesn't understand: we smile even when life hasn't given us a reason to. Outsiders call it humility. But that's too shallow. It's something more complicated. More ancient. It's a mask — not the kind that hides the truth, but the kind that protects it.`,
+      `Because here's the uncomfortable reality: People who've been forced to survive learn to choose grace. People who've been ignored learn to stay gentle. People who've been told they are "less" refuse to let hardship define their spirit.`,
+      `That smile is not naïve. It is not passive. It is not a sign of weakness. It is a declaration: "You will not take my dignity."`,
+      `We don't have high-speed trains. We haven't landed anyone on the moon. Entire nations on our continent still battle corruption, scarcity, and instability. But somehow, in the middle of all that, we've mastered a social technology the rest of the world has forgotten — humility without defeat, kindness without resources.`,
+      `The world chases innovation, infrastructure, and achievement. Those things matter. But they are not the only currency that shapes a civilization. There's another one — quieter, softer, but just as powerful: A smile that carries history. A thank-you that holds the weight of struggle. A humility that refuses to die.`,
+      `That is the African mask. Not a disguise — a shield. A reminder that humanity doesn't require wealth, comfort, or progress. Just character.`,
+      `And every time I step outside and see someone smile through circumstances that should have broken them, I'm reminded of a truth no textbook ever taught me: Strength doesn't always look like power. Sometimes it looks like gratitude.`,
+    ],
+  },
 }
 
 export async function generateMetadata({
@@ -145,6 +165,18 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
               <span>{essay.readTime}</span>
             </div>
           </header>
+
+          {essay.image && (
+            <div className="mb-8 sm:mb-12">
+              <Image
+                src={essay.image}
+                alt={essay.title}
+                width={800}
+                height={600}
+                className="w-full h-auto rounded grayscale"
+              />
+            </div>
+          )}
 
           <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
             {essay.content.map((paragraph, index) => (

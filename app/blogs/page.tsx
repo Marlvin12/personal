@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    id: 'the-african-mask',
+    title: 'The African Mask',
+    excerpt: 'I grew up believing the world was simple: the people with the least should be the ones who complain the most. Then I left home, traveled, returned, and realized how wrong that assumption was.',
+    date: 'November 18, 2025',
+    readTime: '5 min read',
+  },
+  {
     id: 'living-more-loving-more',
     title: 'Living More and Loving More',
     excerpt: 'Somewhere along the way, someone lied. They sold us the wrong dream — that success means screens, schedules, and status. That to matter, we have to constantly do more, own more, post more.',
