@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    id: 'the-unbroken-flight',
+    title: 'The Unbroken Flight',
+    excerpt: 'In the bruise colored hour before night fully arrives, an eagle drags itself through the wind not to survive, but to defy the sky that keeps daring it to break.',
+    date: 'November 18, 2025',
+    readTime: '3 min read',
+  },
+  {
     id: 'the-african-mask',
     title: 'The African Mask',
     excerpt: 'I grew up believing the world was simple: the people with the least should be the ones who complain the most. Then I left home, traveled, returned, and realized how wrong that assumption was.',
@@ -53,32 +60,32 @@ const essays = [
 
 export default function BlogsPage() {
   return (
-    <main className="min-h-screen bg-white">
-      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
-        <Link href="/" className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black mb-12 sm:mb-16 transition-colors duration-300 font-medium">
-          <span>←</span> Back
+    <main className="min-h-screen">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+        <Link href="/" className="inline-flex items-center gap-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 mb-8 sm:mb-12 transition-colors">
+          <span>←</span> back to home
         </Link>
 
-        <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-4 tracking-tight">Essays</h1>
-        <p className="text-lg sm:text-xl text-gray-600 mb-16 sm:mb-20 max-w-2xl font-light">
-          Thoughts on technology, culture, and the slow resistance to a fast world.
+        <h1 className="text-3xl sm:text-4xl md:text-5xl font-normal mb-3 sm:mb-4">essays</h1>
+        <p className="text-sm sm:text-base text-gray-600 mb-10 sm:mb-16 max-w-2xl">
+          thoughts on technology, culture, and the slow resistance to a fast world.
         </p>
 
-        <div className="space-y-8 sm:space-y-12">
+        <div className="space-y-6 sm:space-y-8">
           {essays.map((essay) => (
             <Link
               key={essay.id}
               href={`/blogs/${essay.id}`}
-              className="section-border bg-white p-8 sm:p-10 rounded-2xl block group"
+              className="section-border bg-white p-6 sm:p-8 block hover:shadow-lg transition-all cursor-pointer group"
             >
-              <div className="flex items-start justify-between gap-6 mb-5">
-                <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight group-hover:text-gray-600 transition-colors duration-300">
+              <div className="flex items-start justify-between gap-4 mb-4">
+                <h2 className="text-lg sm:text-xl md:text-2xl font-medium group-hover:text-accent transition-colors">
                   {essay.title}
                 </h2>
-                <span className="text-gray-300 group-hover:text-black transition-colors duration-300 flex-shrink-0 text-xl">→</span>
+                <span className="text-gray-400 flex-shrink-0">→</span>
               </div>
-              <p className="text-base sm:text-lg text-gray-600 leading-relaxed mb-6 font-light">{essay.excerpt}</p>
-              <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
+              <p className="text-sm sm:text-base text-gray-600 leading-relaxed mb-4">{essay.excerpt}</p>
+              <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500">
                 <span>{essay.date}</span>
                 <span>•</span>
                 <span>{essay.readTime}</span>

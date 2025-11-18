@@ -116,6 +116,22 @@ const essays: Record<
       `And every time I step outside and see someone smile through circumstances that should have broken them, I'm reminded of a truth no textbook ever taught me: Strength doesn't always look like power. Sometimes it looks like gratitude.`,
     ],
   },
+  'the-unbroken-flight': {
+    title: 'The Unbroken Flight',
+    date: 'November 18, 2025',
+    readTime: '3 min read',
+    image: '/icarus.webp',
+    content: [
+      `In the bruise colored hour before night fully arrives, an eagle drags itself through the wind not to survive, but to defy the sky that keeps daring it to break. Every ascent is a wager, every breath a hard earned stake.`,
+      `Its wings are not blessings; they are scars learned into shape. It rises because falling has become a debt it refuses to escape.`,
+      `And then Icarus, reckless, radiant, unrepentantly bold, burns upward with the arrogance only the desperate hold. He does not climb for freedom; he climbs because gravity feels like a cage, because staying on the ground would be a quiet, lifelong rage.`,
+      `The sun does not kill him. It unmasks him. It shows him the cost of wanting more than he was built to bear. His fall is not tragedy; it is truth stripped raw of every prayer.`,
+      `From that wreck, in the silence no mortal voice can reach, the phoenix convulses into flame, a violent, searing breach. Rebirth is not peaceful. It is not kind. It is a funeral for the version of yourself you must leave behind.`,
+      `Its scream is the sound of becoming. Its fire is the price of returning.`,
+      `So let these three be our witnesses, the scarred, the shattered, the reborn, proof that every kind of flight demands its own kind of storm. Strength is forged, not granted. Hope is earned, not found. And every rise worth taking drags something dark to the ground.`,
+      `If you must fall, then fall fiercely, with nothing held tight. For only those who burn completely ever learn how to rise and bite back at the night.`,
+    ],
+  },
 }
 
 export async function generateMetadata({
@@ -145,21 +161,21 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="min-h-screen bg-white">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
+    <main className="min-h-screen">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
         <Link
           href="/blogs"
-          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black mb-12 sm:mb-16 transition-colors duration-300 font-medium"
+          className="inline-flex items-center gap-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 mb-8 sm:mb-12 transition-colors"
         >
-          <span>←</span> Essays
+          <span>←</span> back to essays
         </Link>
 
-        <article>
-          <header className="mb-12 sm:mb-16">
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-8 leading-[1.1] tracking-tight">
+        <article className="section-border bg-white p-6 sm:p-8 md:p-12">
+          <header className="mb-8 sm:mb-12 pb-6 sm:pb-8 border-b border-gray-200">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
               {essay.title}
             </h1>
-            <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
+            <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500">
               <span>{essay.date}</span>
               <span>•</span>
               <span>{essay.readTime}</span>
@@ -167,30 +183,30 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
           </header>
 
           {essay.image && (
-            <div className="mb-12 sm:mb-16 -mx-4 sm:mx-0">
+            <div className="mb-8 sm:mb-12">
               <Image
                 src={essay.image}
                 alt={essay.title}
                 width={800}
                 height={600}
-                className="w-full h-auto rounded-2xl grayscale"
+                className="w-full h-auto rounded grayscale"
               />
             </div>
           )}
 
-          <div className="prose prose-lg max-w-none">
+          <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
             {essay.content.map((paragraph, index) => (
-              <p key={index} className="mb-8 text-lg text-gray-700 leading-[1.8] font-light">
+              <p key={index} className="mb-4 sm:mb-6 text-sm sm:text-base text-gray-700 leading-relaxed">
                 {paragraph}
               </p>
             ))}
           </div>
         </article>
 
-        <div className="mt-16 sm:mt-20 pt-12 border-t border-gray-100">
-          <p className="text-gray-600 mb-6 font-medium">Written by Marlvin Goremusandu</p>
-          <Link href="/blogs" className="inline-flex items-center gap-2 text-sm text-black hover:text-gray-600 transition-colors duration-300 font-medium">
-            Read More Essays →
+        <div className="mt-12 section-border bg-white p-8">
+          <p className="text-gray-600 mb-4">written by marlvin goremusandu</p>
+          <Link href="/blogs" className="text-accent hover:underline">
+            read more essays →
           </Link>
         </div>
       </div>

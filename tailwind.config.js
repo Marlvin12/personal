@@ -7,10 +7,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        accent: '#000000',
+        accent: '#ef4444',
       },
       fontFamily: {
-        sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'sans-serif'],
+        mono: ['VT323', 'Courier New', 'Courier', 'monospace'],
       },
     },
   },
