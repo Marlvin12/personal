@@ -8,7 +8,7 @@ export default function About() {
             i&apos;m marlvin goremusandu, a software engineer, researcher, and builder.
           </p>
           <p>
-            i&apos;ve interned twice at <span className="font-semibold text-gray-900">Oracle</span>, co-founded <span className="font-semibold text-gray-900">SafariProtocol</span>, and led the <span className="font-semibold text-gray-900">Google Developer Club</span> at Jackson State University.
+            i&apos;m a software engineer at <span className="font-semibold text-gray-900">Oracle</span>, co-founded <span className="font-semibold text-gray-900">SafariProtocol</span> and co-founded <span className="font-semibold text-gray-900">Popup</span>. i led the <span className="font-semibold text-gray-900">Google Developer Club</span> at Jackson State University and i&apos;m currently working on this cool thing.
           </p>
           <p>
             my journey started in zimbabwe, and it&apos;s taken me through cloud engineering, ai research, and blockchain innovation.
