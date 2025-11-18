@@ -48,7 +48,7 @@ const essays: Record<
     date: 'November 10, 2025',
     readTime: '6 min read',
     content: [
-      `I've lived half my life in Zimbabwe and half in the United States, and that contrast has taught me one thing: life is easy if we make it that way.`,
+      `I've lived half my life in Zimbabwe and half around the world, and that contrast has taught me one thing: life is easy if we make it that way.`,
       `In Zimbabwe, people are happy. They laugh loudly, dance freely, and live slowly. According to mainstream media, they're "poor." But I've realized the world often equates not having with unhappiness, as if peace only exists behind a credit score.`,
       `My grandparents built their home in one month — mortar bricks molded by my cousins, a few bags of cement, and pure teamwork. No debt. No mortgage. Just family and freedom. Meanwhile, in America, you can build the same house — maybe even better — but you'll spend thirty years paying for it. That's when I understood what true freedom is.`,
       `Freedom isn't having more than yesterday; it's having enough for today. My grandparents grow their food, raise chickens and cattle, and live without alarm clocks or rent reminders. They are rich — not in money, but in time.`,

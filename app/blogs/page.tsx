@@ -38,7 +38,7 @@ const essays = [
   {
     id: 'life-is-easy',
     title: 'Life Is Easy If We Make It That Way',
-    excerpt: 'I\'ve lived half my life in Zimbabwe and half in the United States, and that contrast has taught me one thing: life is easy if we make it that way.',
+    excerpt: 'I\'ve lived half my life in Zimbabwe and half around the world, and that contrast has taught me one thing: life is easy if we make it that way.',
     date: 'November 10, 2025',
     readTime: '6 min read',
   },
