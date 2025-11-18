@@ -11,7 +11,7 @@ export default function Hero() {
               alt="Marlvin Goremusandu"
               width={128}
               height={128}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover grayscale"
             />
           </div>
         </div>

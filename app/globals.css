@@ -1,11 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+  font-family: 'VT323', 'Courier New', Courier, monospace;
   background-color: #fafafa;
   color: #1a1a1a;
+  letter-spacing: 0.02em;
+  font-size: 26px;
 }
 
 .section-border {
@@ -34,9 +38,9 @@ body {
 .btn-primary {
   background-color: #ef4444;
   color: white;
-  padding: 10px 16px;
+  padding: 12px 20px;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 500;
   transition: all 0.2s;
   display: inline-flex;
@@ -47,8 +51,8 @@ body {
 
 @media (min-width: 640px) {
   .btn-primary {
-    padding: 12px 24px;
-    font-size: 14px;
+    padding: 16px 32px;
+    font-size: 28px;
     gap: 8px;
   }
 }
@@ -59,11 +63,11 @@ body {
 
 .btn-secondary {
   background-color: transparent;
-  color: #22c55e;
-  padding: 10px 16px;
-  border: 1px solid #22c55e;
+  color: #1a1a1a;
+  padding: 12px 20px;
+  border: 1px solid #1a1a1a;
   border-radius: 4px;
-  font-size: 13px;
+  font-size: 24px;
   font-weight: 500;
   transition: all 0.2s;
   display: inline-flex;
@@ -74,19 +78,19 @@ body {
 
 @media (min-width: 640px) {
   .btn-secondary {
-    padding: 12px 24px;
-    font-size: 14px;
+    padding: 16px 32px;
+    font-size: 28px;
     gap: 8px;
   }
 }
 
 .btn-secondary::before {
   content: '●';
-  color: #22c55e;
+  color: #1a1a1a;
 }
 
 .btn-secondary:hover {
-  background-color: #22c55e;
+  background-color: #1a1a1a;
   color: white;
 }
 

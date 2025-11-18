@@ -10,7 +10,7 @@ module.exports = {
         accent: '#ef4444',
       },
       fontFamily: {
-        mono: ['ui-monospace', 'SFMono-Regular', 'Menlo', 'Monaco', 'Consolas', 'monospace'],
+        mono: ['VT323', 'Courier New', 'Courier', 'monospace'],
       },
     },
   },

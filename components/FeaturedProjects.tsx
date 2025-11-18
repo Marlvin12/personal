@@ -88,7 +88,7 @@ export default function FeaturedProjects() {
                     alt={project.name}
                     width={400}
                     height={192}
-                    className="w-full h-full object-contain"
+                    className="w-full h-full object-contain grayscale"
                   />
                 ) : (
                   <span className="text-6xl opacity-20">💻</span>
