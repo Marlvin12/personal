@@ -55,20 +55,20 @@ export default function FeaturedProjects() {
   ]
 
   return (
-    <section id="projects" className="mb-16 sm:mb-24">
-      <div className="flex justify-between items-center mb-6 sm:mb-8">
-        <h2 className="text-xl sm:text-2xl font-normal">featured projects</h2>
+    <section id="projects" className="mb-24 sm:mb-32">
+      <div className="flex justify-between items-center mb-12">
+        <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight">Featured Work</h2>
         <a 
           href="https://github.com/Marlvin12" 
           target="_blank"
           rel="noopener noreferrer"
-          className="text-xs sm:text-sm text-gray-600 hover:text-gray-900 flex items-center gap-2"
+          className="text-sm text-gray-500 hover:text-black flex items-center gap-2 transition-colors duration-300 font-medium"
         >
-          all projects
-          <span>↗</span>
+          View All
+          <span>→</span>
         </a>
       </div>
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
         {projects.map((project, index) => {
           const ProjectWrapper = project.link ? 'a' : 'div'
           const wrapperProps = project.link 
@@ -78,24 +78,26 @@ export default function FeaturedProjects() {
           return (
             <ProjectWrapper 
               key={index} 
-              className="section-border bg-white p-6 hover:shadow-lg transition-shadow cursor-pointer block"
+              className="section-border bg-white rounded-2xl overflow-hidden cursor-pointer block group"
               {...wrapperProps}
             >
-              <div className={`${project.color} h-48 mb-4 rounded flex items-center justify-center overflow-hidden`}>
+              <div className="bg-gray-50 h-56 flex items-center justify-center overflow-hidden">
                 {project.image ? (
                   <Image 
                     src={project.image} 
                     alt={project.name}
                     width={400}
-                    height={192}
-                    className="w-full h-full object-contain grayscale"
+                    height={224}
+                    className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-500"
                   />
                 ) : (
                   <span className="text-6xl opacity-20">💻</span>
                 )}
               </div>
-              <h3 className="text-lg font-medium mb-2">{project.name}</h3>
-              <p className="text-sm text-gray-600 leading-relaxed">{project.description}</p>
+              <div className="p-6">
+                <h3 className="text-xl font-semibold mb-3 group-hover:text-gray-600 transition-colors duration-300">{project.name}</h3>
+                <p className="text-sm text-gray-600 leading-relaxed">{project.description}</p>
+              </div>
             </ProjectWrapper>
           )
         })}

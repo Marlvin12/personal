@@ -43,24 +43,24 @@ export default function Services() {
   ]
 
   return (
-    <section className="mb-16 sm:mb-24">
-      <h2 className="text-xl sm:text-2xl font-normal mb-6 sm:mb-8">what i build for fun</h2>
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-6">
+    <section className="mb-24 sm:mb-32">
+      <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-12">Capabilities</h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 sm:gap-8">
         {services.map((service, index) => (
           <div 
             key={index} 
-            className="section-border bg-white p-6 sm:p-8 hover:shadow-lg transition-shadow"
+            className="section-border bg-white p-8 sm:p-10 rounded-2xl group"
           >
-            <div className="text-gray-700 mb-4">{service.icon}</div>
-            <h3 className="text-lg font-medium mb-3">{service.title}</h3>
-            <p className="text-sm text-gray-600 leading-relaxed mb-4">
+            <div className="text-black mb-6 group-hover:text-gray-600 transition-colors duration-300">{service.icon}</div>
+            <h3 className="text-xl font-semibold mb-4 tracking-tight capitalize">{service.title}</h3>
+            <p className="text-base text-gray-600 leading-relaxed mb-6">
               {service.description}
             </p>
             <div className="flex flex-wrap gap-2">
               {service.tags.map((tag, tagIndex) => (
                 <span 
                   key={tagIndex}
-                  className="text-xs px-3 py-1 bg-gray-100 text-gray-700 rounded-full"
+                  className="text-xs px-3 py-1.5 bg-gray-50 text-gray-700 rounded-lg font-medium"
                 >
                   {tag}
                 </span>

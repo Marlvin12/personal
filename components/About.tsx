@@ -1,23 +1,20 @@
 export default function About() {
   return (
-    <section id="experience" className="mb-16 sm:mb-24">
-      <h2 className="text-xl sm:text-2xl font-normal mb-6 sm:mb-8">who am i</h2>
-      <div className="section-border bg-white p-6 sm:p-8 md:p-12">
-        <div className="max-w-3xl text-gray-600 text-sm sm:text-base leading-relaxed space-y-4">
-          <p>
-            i&apos;m marlvin goremusandu, a software engineer, researcher, and builder.
+    <section id="experience" className="mb-24 sm:mb-32">
+      <h2 className="text-3xl sm:text-4xl font-semibold tracking-tight mb-12">About</h2>
+      <div className="section-border bg-white p-8 sm:p-10 md:p-12 rounded-2xl">
+        <div className="max-w-3xl text-gray-700 text-base sm:text-lg leading-relaxed space-y-6">
+          <p className="text-xl sm:text-2xl text-black font-light leading-relaxed">
+            Software engineer at <span className="font-medium">Oracle</span>. Co-founded <span className="font-medium">SafariProtocol</span> and <span className="font-medium">Popup</span>. Led the Google Developer Club at Jackson State University.
           </p>
           <p>
-            i&apos;m a software engineer at <span className="font-semibold text-gray-900">Oracle</span>, co-founded <span className="font-semibold text-gray-900">SafariProtocol</span> and co-founded <span className="font-semibold text-gray-900">Popup</span>. i led the <span className="font-semibold text-gray-900">Google Developer Club</span> at Jackson State University and i&apos;m currently working on this cool thing.
+            My journey started in Zimbabwe and has taken me through cloud engineering, AI research, and blockchain innovation.
           </p>
           <p>
-            my journey started in zimbabwe, and it&apos;s taken me through cloud engineering, ai research, and blockchain innovation.
+            Outside of tech, I play golf, tennis, and jiu-jitsu. Recently picked up photography and writing to explore creativity beyond code.
           </p>
-          <p>
-            outside of tech, i&apos;m just as passionate about learning — i play golf, tennis, and jiu-jitsu, and recently picked up photography and writing to explore creativity beyond code.
-          </p>
-          <p className="text-gray-900 font-medium">
-            i believe in kaizen — constant improvement — whether in engineering, mindset, or life.
+          <p className="text-black font-medium pt-4">
+            Kaizen — constant improvement in engineering, mindset, and life.
           </p>
         </div>
       </div>

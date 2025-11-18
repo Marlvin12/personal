@@ -145,21 +145,21 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <main className="min-h-screen">
-      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
+    <main className="min-h-screen bg-white">
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 py-12 sm:py-16 md:py-20">
         <Link
           href="/blogs"
-          className="inline-flex items-center gap-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 mb-8 sm:mb-12 transition-colors"
+          className="inline-flex items-center gap-2 text-sm text-gray-500 hover:text-black mb-12 sm:mb-16 transition-colors duration-300 font-medium"
         >
-          <span>←</span> back to essays
+          <span>←</span> Essays
         </Link>
 
-        <article className="section-border bg-white p-6 sm:p-8 md:p-12">
-          <header className="mb-8 sm:mb-12 pb-6 sm:pb-8 border-b border-gray-200">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-medium mb-4 sm:mb-6 leading-tight">
+        <article>
+          <header className="mb-12 sm:mb-16">
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-semibold mb-8 leading-[1.1] tracking-tight">
               {essay.title}
             </h1>
-            <div className="flex items-center gap-3 sm:gap-4 text-xs sm:text-sm text-gray-500">
+            <div className="flex items-center gap-4 text-sm text-gray-500 font-medium">
               <span>{essay.date}</span>
               <span>•</span>
               <span>{essay.readTime}</span>
@@ -167,30 +167,30 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
           </header>
 
           {essay.image && (
-            <div className="mb-8 sm:mb-12">
+            <div className="mb-12 sm:mb-16 -mx-4 sm:mx-0">
               <Image
                 src={essay.image}
                 alt={essay.title}
                 width={800}
                 height={600}
-                className="w-full h-auto rounded grayscale"
+                className="w-full h-auto rounded-2xl grayscale"
               />
             </div>
           )}
 
-          <div className="prose prose-sm sm:prose-base lg:prose-lg max-w-none">
+          <div className="prose prose-lg max-w-none">
             {essay.content.map((paragraph, index) => (
-              <p key={index} className="mb-4 sm:mb-6 text-sm sm:text-base text-gray-700 leading-relaxed">
+              <p key={index} className="mb-8 text-lg text-gray-700 leading-[1.8] font-light">
                 {paragraph}
               </p>
             ))}
           </div>
         </article>
 
-        <div className="mt-12 section-border bg-white p-8">
-          <p className="text-gray-600 mb-4">written by marlvin goremusandu</p>
-          <Link href="/blogs" className="text-accent hover:underline">
-            read more essays →
+        <div className="mt-16 sm:mt-20 pt-12 border-t border-gray-100">
+          <p className="text-gray-600 mb-6 font-medium">Written by Marlvin Goremusandu</p>
+          <Link href="/blogs" className="inline-flex items-center gap-2 text-sm text-black hover:text-gray-600 transition-colors duration-300 font-medium">
+            Read More Essays →
           </Link>
         </div>
       </div>
