@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    id: 'hindsight-and-sacrifice',
+    title: 'The Dilemma Between Hindsight and Sacrifice',
+    excerpt: 'For years, I believed that progress demanded a price. Every time I reached for something I wanted, something else slipped through my fingers. But survival is a fragile kind of victory.',
+    date: 'November 21, 2025',
+    readTime: '7 min read',
+  },
+  {
     id: 'the-unbroken-flight',
     title: 'The Unbroken Flight',
     excerpt: 'In the bruise colored hour before night fully arrives, an eagle drags itself through the wind not to survive, but to defy the sky that keeps daring it to break.',
