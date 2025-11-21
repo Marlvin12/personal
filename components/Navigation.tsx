@@ -18,7 +18,7 @@ export default function Navigation() {
           </a>
         </li>
         <li>
-          <a href="/blogs" className="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2">
+          <a href="/essays" className="text-gray-600 hover:text-gray-900 transition-colors py-2 px-2">
             essays
           </a>
         </li>

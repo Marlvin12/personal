@@ -195,7 +195,7 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
     <main className="min-h-screen">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12 md:py-16">
         <Link
-          href="/blogs"
+          href="/essays"
           className="inline-flex items-center gap-2 text-sm sm:text-base text-gray-600 hover:text-gray-900 mb-8 sm:mb-12 transition-colors"
         >
           <span>←</span> back to essays
@@ -236,7 +236,7 @@ export default function EssayPost({ params }: { params: { slug: string } }) {
 
         <div className="mt-12 section-border bg-white p-8">
           <p className="text-gray-600 mb-4">written by marlvin goremusandu</p>
-          <Link href="/blogs" className="text-accent hover:underline">
+          <Link href="/essays" className="text-accent hover:underline">
             read more essays →
           </Link>
         </div>

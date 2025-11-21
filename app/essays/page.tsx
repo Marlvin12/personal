@@ -82,7 +82,7 @@ export default function BlogsPage() {
           {essays.map((essay) => (
             <Link
               key={essay.id}
-              href={`/blogs/${essay.id}`}
+              href={`/essays/${essay.id}`}
               className="section-border bg-white p-6 sm:p-8 block hover:shadow-lg transition-all cursor-pointer group"
             >
               <div className="flex items-start justify-between gap-4 mb-4">
