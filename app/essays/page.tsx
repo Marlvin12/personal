@@ -8,6 +8,13 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    id: 'playing-in-the-rain',
+    title: 'Playing in the Rain',
+    excerpt: 'I didn\'t expect anything unusual to happen that day. I was just on a tennis court, doing what I\'ve done hundreds of times before. But then it started to rain, and something in me shifted.',
+    date: 'December 1, 2025',
+    readTime: '5 min read',
+  },
+  {
     id: 'hindsight-and-sacrifice',
     title: 'The Dilemma Between Hindsight and Sacrifice',
     excerpt: 'For years, I believed that progress demanded a price. Every time I reached for something I wanted, something else slipped through my fingers. But survival is a fragile kind of victory.',
