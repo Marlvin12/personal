@@ -94,3 +94,15 @@ body {
   color: white;
 }
 
+.text-accent {
+  color: #ef4444;
+}
+
+.bg-accent {
+  background-color: #ef4444;
+}
+
+.border-accent {
+  border-color: #ef4444;
+}
+

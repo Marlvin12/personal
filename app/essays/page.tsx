@@ -8,6 +8,14 @@ export const metadata: Metadata = {
 
 const essays = [
   {
+    id: 'digital-minimalism',
+    title: 'The Road to Digital Minimalism',
+    excerpt: 'I used to think social media was just part of modern life — a noisy background, sometimes useful, mostly "for fun." Now I see it differently: like walking into a casino where the house not only rigs the games, but also watches my eyes.',
+    date: 'December 2, 2025',
+    readTime: '15 min read',
+    customPath: '/detox',
+  },
+  {
     id: 'playing-in-the-rain',
     title: 'Playing in the Rain',
     excerpt: 'I didn\'t expect anything unusual to happen that day. I was just on a tennis court, doing what I\'ve done hundreds of times before. But then it started to rain, and something in me shifted.',
@@ -89,7 +97,7 @@ export default function BlogsPage() {
           {essays.map((essay) => (
             <Link
               key={essay.id}
-              href={`/essays/${essay.id}`}
+              href={'customPath' in essay ? essay.customPath as string : `/essays/${essay.id}`}
               className="section-border bg-white p-6 sm:p-8 block hover:shadow-lg transition-all cursor-pointer group"
             >
               <div className="flex items-start justify-between gap-4 mb-4">
